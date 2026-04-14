@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES - Love Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video id="background-video" autoplay muted loop playsinline>
+        <source src="Background3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="background"></div>
+    <div class="stars"></div>
+    <div id="message-box" class="message-box"></div>
+
+    <div class="container">
+        <!-- Home Page -->
+        <section id="home" class="section active">
+            <div class="hero-card">
+                <div class="eyebrow">FLAMES PLAYGROUND</div>
+                <h1><span class="hero-line-small">Let LOVE decide,</span><br><span class="hero-line-large">the Sparks...</span></h1>
+                <p>A cheeky FLAMES website which tells you which type of relationship you have with that person.</p>
+                <p class="subtle">Check it here!</p>
+                <button id="get-started" class="glass-button">Get Started</button>
+            </div>
+        </section>
+
+        <!-- Form Page -->
+        <section id="form" class="section">
+            <div class="form-card">
+                <div class="eyebrow">Ready to play?</div>
+                <h2 class="form-heading">Find Out What’s Between You 👀…</h2>
+                <div class="form-container">
+                    <input type="text" id="your-name" placeholder="Enter Your Name" required>
+                    <input type="text" id="partner-name" placeholder="Enter Partner’s Name" required>
+                    <select id="expected-result">
+                        <option value="">Let fate decide what it should be...</option>
+                        <option value="Friends">Friends</option>
+                        <option value="Lovers">Lovers</option>
+                        <option value="Affection">Affection</option>
+                        <option value="Marriage">Marriage</option>
+                        <option value="Enemy">Enemy</option>
+                        <option value="Siblings">Siblings</option>
+                    </select>
+                    <button id="calculate" class="glass-button">Calculate</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Result Popup -->
+        <div id="result-popup" class="popup">
+            <div class="popup-content">
+                <h2 id="result-text"></h2>
+                <div class="popup-buttons">
+                    <button id="restart" class="glass-button small">Restart</button>
+                    <button id="return-home" class="glass-button small">Return Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Emojis Container -->
+    <div id="emojis-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
